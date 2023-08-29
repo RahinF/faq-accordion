@@ -1,14 +1,8 @@
-"use client";
-
 import Accordion from "@components/Accordion";
-import DesktopGraphic from "@components/Graphic/Desktop";
-import MobileGraphic from "@components/Graphic/Mobile";
-import useBreakpoint from "@hooks/useBreakpoint";
+import Graphic from "@components/Graphic";
 import clsx from "clsx";
 
 export default function Home() {
-  const isMobile = useBreakpoint("md");
-
   return (
     <main className="grid place-items-center h-screen">
       <section
@@ -25,7 +19,7 @@ export default function Home() {
             "max-w-sm md:max-w-screen-md w-full relative mt-32 md:mt-0",
           ])}
         >
-          {isMobile ? <MobileGraphic /> : <DesktopGraphic />}
+          <Graphic />
           <Accordion />
         </div>
       </section>

@@ -46,6 +46,7 @@ const Tab = ({ tab, selectedTab, onClick }: Props) => {
             alt="arrow icon"
             height={12}
             width={12}
+            className="w-auto h-auto"
           />
         </button>
       </h3>
