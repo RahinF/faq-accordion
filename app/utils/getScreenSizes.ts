@@ -1,5 +1,5 @@
 import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../tailwind.config";
+import tailwindConfig from "../../tailwind.config";
 
 const screenSizesKeys = ["sm", "md", "lg", "xl", "2xl"] as const;
 export type Size = (typeof screenSizesKeys)[number];
